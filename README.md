@@ -1,1 +1,1 @@
-# Group-7 Ecell Merch Page
+# **Group-7 Ecell Merch Page**
