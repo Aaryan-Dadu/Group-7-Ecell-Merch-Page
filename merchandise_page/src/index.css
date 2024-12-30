@@ -69,8 +69,6 @@ nav ul li a {
 .categories {
     display: flex;
     justify-content: space-around;
-    /* height: 10px;
-    width: 10px; */
     padding: 40px;
     background-color: #fff;
 }
@@ -81,9 +79,22 @@ nav ul li a {
 }
 
 .category img{
+    border-radius: 10px;
     height: 400px;
-    width: 250px;
+    width: 260px;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    transform: translateY(-10px);
+
 }
+
+.category img:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 5px rgb(0, 0, 0,0.3);
+    transform: translateY(-20px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
+}
+
 
 .product-grid {
     display: grid;
@@ -97,6 +108,11 @@ nav ul li a {
     padding: 20px;
     text-align: center;
     border: 1px solid #ddd;
+}
+
+.product-card img{
+    height: 400px;
+    width: 250px;
 }
 
 footer {
