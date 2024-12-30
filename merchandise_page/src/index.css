@@ -33,11 +33,13 @@ nav ul li {
     display: inline;
     color: black;
 }
-nav ul li img{
+nav ul li a img{
     width: 41px;
     height: 64px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
-nav ul li a {
+.nav-item {
     margin-top: 30px;
     position: relative;
     text-decoration: none;
@@ -47,11 +49,11 @@ nav ul li a {
     display: inline-block;
 }
 
-nav ul li a:hover{
+.nav-item:hover{
     color: #004b87
 }
 
-nav ul li a::after{
+.nav-item::after{
     content: '';
     position: absolute;
     left: 0;
@@ -64,7 +66,7 @@ nav ul li a::after{
     transform: scaleX(0);
     transition: transform .3s;
 }
-nav ul li a:hover::after{
+.nav-item:hover::after{
     transform-origin: left;
     transform: scaleX(1);
 }
