@@ -204,6 +204,10 @@ footer a img:hover{
 }
 
 @keyframes backcolor{
+    0%{
+        color: black;
+        border-color: black;
+    }
     25%{
         color: yellowgreen;
         border-color: yellowgreen;
